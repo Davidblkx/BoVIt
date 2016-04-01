@@ -1,0 +1,20 @@
+{
+  "name": "bovit",
+  "version": "1.0.0",
+  "description": "bo service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.davidpires.pt/PT/BoVit.git"
+  },
+  "keywords": [
+    "bot",
+    "vit",
+    "fobo"
+  ],
+  "author": "David Pires",
+  "license": "MIT"
+}
