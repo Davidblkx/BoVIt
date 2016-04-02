@@ -2,7 +2,7 @@ var deployd = require('deployd');
 
 var server = deployd({
   port: 2005,
-  env: 'dev',
+  env: 'production',
   db: {
     host: '127.0.0.1',
     port: 27017,
@@ -13,7 +13,7 @@ var server = deployd({
 server.listen();
 
 server.on('listening', function() {
-  console.log("Server is listening");
+  console.log("Server is listening on port 2005");
 });
 
 server.on('error', function(err) {

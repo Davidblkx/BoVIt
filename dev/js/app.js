@@ -23,6 +23,11 @@
         .when('/com', {
             templateUrl: 'templates/template-com.html',
             controller: 'ComController'
+        })
+        
+        .when('/isp',{
+            templateUrl: 'templates/template-isp.html',
+            controller: 'IspController'
         });
     });
 
@@ -99,6 +104,12 @@
 
             return q;
         };
+    }]);
+    
+    app.controller('IspController', ['$scope', '$http', function($scope, $http){
+        $http.get('isp').success(function(data) {
+            $scope.isps = data;
+        });
     }]);
 
 
