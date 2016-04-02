@@ -1,0 +1,15 @@
+@import '_imports.scss';
+
+nav{
+  
+  font-size: 1.1em !important;
+
+  #btnLogout:hover{
+    background-color: $color-danger;
+  }
+  
+  #menu-change-pass{
+    padding: 5px 5px;
+  }
+
+}

@@ -1,0 +1,28 @@
+{
+  "name": "bovit",
+  "description": "app",
+  "main": "app.js",
+  "authors": [
+    "david"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "angular": "^1.5.1",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.2"
+  }
+}

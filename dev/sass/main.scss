@@ -1,0 +1,11 @@
+@import '_imports.scss','_login.scss', '_navbar.scss', '_users.scss';
+
+html{
+    width: 100%;
+    height: 100%;
+    
+    body{
+        width: 100%;
+        font-family: $font-roboto;
+    }
+}

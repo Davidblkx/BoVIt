@@ -31,4 +31,5 @@ data
 .idea
 .sass-cache
 bower_components
+public
 

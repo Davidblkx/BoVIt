@@ -1,0 +1,1 @@
+cancelIf(me.role < 100, "Invalid user");

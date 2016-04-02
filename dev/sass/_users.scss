@@ -1,0 +1,21 @@
+@import '_imports.scss';
+
+#templateUsers{
+    
+    td{
+        text-align: center;
+    }
+    
+    tbody{
+        tr{
+            td{
+                input{
+                    min-width: 200px;
+                    border: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,1 @@
+cancelUnless(me && (me.role = 100 || me.id === this.id), "Invalid user");

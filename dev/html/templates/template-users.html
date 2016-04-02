@@ -1,0 +1,33 @@
+
+<table class="table" id="templateUsers">
+    <thead>
+        <tr>
+            <td>Username</td>
+            <td>Email</td>
+            <td>Admin</td>
+            <td>Activo</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newUserModal">
+                    <i class="fa fa-plus"></i> Novo
+                </button>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="u in users">
+            <td>{{u.username}}</td>
+            <td><input type="text" name="email" ng-model="u.email"/></td>
+            <td><input type="text" name="role" ng-model="u.role"/></td>
+            <td><input type="checkbox" name="isActive" ng-model="u.active"/></td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-success" href ng-click="saveUser(u.id, u.username, u.email, u.active, u.role)"><i class="fa fa-check"></i> Save</a>
+                    <a class="btn btn-danger" href ng-click="deleteUser(u.id)"><i class="fa fa-remove"></i> Delete</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<new-user></new-user>
