@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"ent": {
+			"name": "ent",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "ent",
+			"order": 1
+		},
+		"code": {
+			"name": "code",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "code",
+			"order": 2
+		},
+		"tek": {
+			"name": "tek",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "tek",
+			"order": 3
+		},
+		"active": {
+			"name": "active",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "active",
+			"order": 4
+		},
+		"obs": {
+			"name": "obs",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "obs",
+			"order": 5
+		}
+	}
+}

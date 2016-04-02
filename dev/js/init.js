@@ -15,7 +15,7 @@ if(LOAD_LIVERELOAD){
 
         dpd.people.me(function(result, error){
             if(result != ""){
-                window.location = "/";
+                window.location = "/orig";
             }
         });
 

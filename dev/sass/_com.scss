@@ -1,0 +1,25 @@
+@import '_imports.scss';
+
+#comController{
+    
+    .table{
+        
+        text-align: center; 
+        
+        thead{
+            font-weight: bold;
+        }
+        tbody{
+            
+            .state{
+                background-color: $color-success;
+            }
+            
+            .state.off{
+                background-color: $color-danger;
+            }
+            
+        }
+    }
+    
+}
