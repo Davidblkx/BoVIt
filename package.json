@@ -16,5 +16,8 @@
     "fobo"
   ],
   "author": "David Pires",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "deployd": "^0.8.8"
+  }
 }
