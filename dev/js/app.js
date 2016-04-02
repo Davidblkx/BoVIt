@@ -12,6 +12,11 @@
             .when('/users', {
                 templateUrl: 'templates/template-users.html',
                 controller: 'PeopleController'
+            })
+            
+            .when('/orig', {
+                templateUrl: 'templates/template-orig.html',
+                controller: 'OrigController'
             });
     });
     
@@ -56,6 +61,13 @@
     
     app.controller('HomeController', ['$scope', '$http', function($scope, $http){
         $scope.message = "This is a test";
+    }]);
+    
+    app.controller('OrigController', ['$scope', '$sce', function($scope, $sce){
+        $scope.num = "";
+        $scope.getLink = function(num){
+            return $sce.trustAsResourceUrl("http://portal-domf.telecom.pt/dop/stc3/equipamentos/mainP.asp?txtNa=" + num);
+        };
     }]);
     
     

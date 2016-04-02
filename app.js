@@ -1,7 +1,7 @@
 var deployd = require('deployd');
 
 var server = deployd({
-  port: 2403,
+  port: 2005,
   env: 'dev',
   db: {
     host: '127.0.0.1',
