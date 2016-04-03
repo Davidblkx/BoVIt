@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('gambleStats', ['ngRoute']);
+    var app = angular.module('gambleStats', ['ngRoute', 'codigos']);
 
     app.config(function($routeProvider) {
         $routeProvider
@@ -28,6 +28,11 @@
         .when('/isp',{
             templateUrl: 'templates/template-isp.html',
             controller: 'IspController'
+        })
+        
+        .when('/func', {
+            templateUrl: 'templates/template-func.html',
+            controller: 'FuncController'
         });
     });
 
@@ -111,7 +116,10 @@
             $scope.isps = data;
         });
     }]);
-
+    
+    app.controller('FuncController', ['$scope', function ($scope){
+        
+    }]);
 
     //Topbar MENU
     app.directive("topMenu", ['$http', '$q', function($http, $q) {

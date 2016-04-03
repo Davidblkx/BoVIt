@@ -7,6 +7,20 @@ if(LOAD_LIVERELOAD){
         ':35729/livereload.js"></' + 'script>');
 }
 
+function COPY_TXT(selector) {
+    document.querySelector(selector).select();
+    try{
+        if(document.execCommand('copy')){
+            console.log('Copy to clipboard completed');
+        }else{
+            console.log('Copy to clipboard not completed');
+        }
+    }
+    catch (err){
+        console.log('Error at copy to clipboard:', err);
+    }
+}
+
 (function(){
     var loc = window.location.pathname;
 

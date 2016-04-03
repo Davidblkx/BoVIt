@@ -1,0 +1,34 @@
+@import '_imports';
+
+#funcController{
+    width: 100%;
+}
+
+.cmd{
+    
+    max-width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    .title{
+        text-align: center;
+    }
+    
+    .checkbox{
+        margin-left: 0.2em;
+    }
+    
+    form{
+        margin-bottom: 0.5em;
+    }
+    
+    .form-result{
+        .form-group {
+            margin-bottom: 0;
+            
+        }
+        .input-group-addon{
+            min-width: 9em;
+        }
+    }
+}

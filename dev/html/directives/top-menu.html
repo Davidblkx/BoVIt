@@ -14,14 +14,25 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
             <li  ng-show="user.role > 90"><a href="/#/users"><i class="fa fa-users"></i> Utilizadores</a></li>
-            <li  ng-show="user.role > 50"><a href="/#/orig"><i class="fa fa-home"></i> Origem</a></li>
-            <li  ng-show="user.role > 50"><a href="/#/com"><i class="fa fa-fax"></i> Comutadores</a></li>
-            <li  ng-show="user.role > 50"><a href="/#/isp"><i class="fa fa-legal"></i> ISP</a></li>
+            <li class="dropdown" ng-show="user.role > 50">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fax"> Comutação</i></a>
+                <ul class="dropdown-menu">
+                    <li  ng-show="user.role > 50"><a href="/#/orig"><i class="fa fa-home"></i> Origem</a></li>
+                    <li  ng-show="user.role > 50"><a href="/#/com"><i class="fa fa-fax"></i> Comutadores</a></li>
+                    <li  ng-show="user.role > 50"><a href="/#/isp"><i class="fa fa-legal"></i> ISP</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" ng-show="user.role > 50">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-code"> Códigos</i></a>
+                <ul class="dropdown-menu">
+                    <li  ng-show="user.role > 50"><a href="/#/func"><i class="fa fa-cogs"></i> Funcionalidades</a></li>
+                </ul>
+            </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
             
-            <li class="dropdown">
+            <li class="dropdown" ng-show="user.role >= 90">
                 <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-key"></i></a>
                 <change-pass class="dropdown-menu"></change-pass>
             </li>
