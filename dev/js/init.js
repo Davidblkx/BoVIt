@@ -25,29 +25,9 @@ function COPY_TXT(selector) {
     var loc = window.location.pathname;
 
     if(loc === "/login.html"){
-        var query = {"username":"admin"};
-
         dpd.people.me(function(result, error){
             if(result != ""){
                 window.location = "/orig";
-            }
-        });
-
-        dpd.people.get(query, function (result) {
-            console.log(result);
-            if(result.length === 0){
-                var us = {
-                    username: "admin",
-                    password: "qwerty",
-                    role: 100,
-                    active: true,
-                    email: "davidblkx@outlook.com"
-                };
-
-                dpd.people.post(us, function(user, err) {
-                    if(err) return dhtmlx.alert(err);
-                    console.log("admin user created", user);
-                });
             }
         });
     }
