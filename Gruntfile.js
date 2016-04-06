@@ -133,8 +133,15 @@ module.exports = function (grunt) {
                     dest: 'public/'
                 }]
             }
-       },
+        },
         // #########################################
+        
+        concat: {
+            app: {
+                src: ['dev/app/**/*'],
+                dest: 'public/js/appDepend.js'
+            }
+        },
         
         // ############# APPEND DATA ###############
         file_append: {
@@ -172,6 +179,10 @@ module.exports = function (grunt) {
             js: {
                 files: ['dev/js/**/*.js'],
                 tasks: ['copy:js', 'file_append:dev']
+            },
+            concat: {
+                files: ['dev/app/**/*'],
+                tasks: ['concat']
             },
             lib: {
                 files: ['dev/lib/**/*'],
@@ -211,6 +222,7 @@ module.exports = function (grunt) {
         'copy:lib',
         'copy:img',
         'copy:js',
+        'concat',
         'copy:html',
         'file_append:dev'
     ]);
@@ -224,6 +236,7 @@ module.exports = function (grunt) {
         'copy:lib',
         'copy:img',
         'copy:js',
+        'concat',
         'copy:html',
         'file_append:deploy'
     ]);
