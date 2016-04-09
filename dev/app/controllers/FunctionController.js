@@ -4,7 +4,7 @@
 
     app.controller('FunctionController', ['$scope', function($scope) {
 
-        $scope.dn = '244401300';
+        $scope.dn = '';
         $scope.tek = 'EWSD';
         $scope.line = 'A01';
 
