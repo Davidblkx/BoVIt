@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('gambleStats', ['ngRoute', 'codigos', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu']);
+    var app = angular.module('bovit', ['ngRoute', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu']);
 
     app.config(function($routeProvider) {
         $routeProvider

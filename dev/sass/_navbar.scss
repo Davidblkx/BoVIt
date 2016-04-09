@@ -1,6 +1,9 @@
 @import '_imports.scss';
 
-nav {
+.navbar {
+  
+  border-radius: 0;
+  margin-bottom: 0;
   
   font-size: 1.1em !important;
 
@@ -10,6 +13,15 @@ nav {
   
   #menu-change-pass{
     padding: 5px 5px;
+  }
+  
+  .navbar-brand{
+      width: 10em;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1.5em;
+      padding-left: 0;
+      padding-right: 0;
   }
 
 }

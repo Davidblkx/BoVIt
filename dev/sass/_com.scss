@@ -2,17 +2,23 @@
 
 #comController{
     
+    padding: 1em 2em;
+    
     .table{
         
         text-align: center; 
         
         thead{
             font-weight: bold;
+            font-size: 1.4em;
         }
         tbody{
             
+            font-size: 1.1em;
+            
             .state{
                 background-color: $color-success;
+                width: 3em;
             }
             
             .state.off{

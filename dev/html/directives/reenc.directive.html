@@ -1,92 +1,34 @@
-<div class="cmd" id="cmdReencaminhamento">
+<div class="page-header">
+    <h3>Reencaminhamento</h3>
 
-    <div class="title page-header">
-        <h1>Reencaminhamento</h1>
-    </div>
-    
-    
-    <div class=" page-header">
     <form class="form-inline">
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Número</div>
-                <input type="text" ng-model="cmd.dn" class="form-control" id="cmd-reenc-numero" placeholder="Número">
-            </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="cfu"> Incondicional
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="cfb"> Ocupado
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="cfnr"> Não Atende
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="free"> Gratuito
+            </label>
         </div>
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon">Destino</div>
-                <input type="text" ng-model="cmd.tdn" class="form-control" id="cmd-reenc-dest" placeholder="Destino">
+                <input type="text" class="form-control" placeholder="Número Destino" ng-model="tdn">
             </div>
         </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" ng-model="cmd.free"> Gratuito
-            </label>
-        </div>
-    </form>
-    <form class="form-inline">
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">COM</div>
-                <select class="form-control" id="cmd-select-tek" ng-model="cmd.tek">
-                    <option value="S12">S12</option>
-                    <option value="EWSD">EWSD</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Linha</div>
-                <select class="form-control" id="cmd-select-line" ng-model="cmd.line">
-                    <option value="A01">Analógica</option>
-                    <option value="A13">RDIS s\DDIs</option>
-                    <option value="A05">RDIS c\DDIs</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Tipo</div>
-                <select class="form-control" id="cmd-select-type" ng-model="cmd.type">
-                    <option value="CFU">Incondicional</option>
-                    <option value="CFB">Ocupado</option>
-                    <option value="CFNR">Não Atendimento</option>
-                </select>
-            </div>
-        </div>
-    </form>
-    </div>
-    <form class="form-result">
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Activar</div>
-                <input type="text" ng-value="cmd.cmdAct(cmd.dn, cmd.tdn, cmd.tek, cmd.type, cmd.free, cmd.line)" 
-                    class="form-control" id="cmd-act">
-                <span class="input-group-btn">
-                    <button class="btn btn-success" ng-click="cmd.copy('#cmd-act')"><i class="fa fa-copy"></i></button>
-                </span>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Desactivar</div>
-                <input type="text" ng-value="cmd.cmdDeact(cmd.dn, cmd.tek, cmd.type, cmd.line)" 
-                    class="form-control" id="cmd-deact">
-                <span class="input-group-btn">
-                    <button class="btn btn-success" ng-click="cmd.copy('#cmd-deact')"><i class="fa fa-copy"></i></button>
-                </span>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-addon">Funcionalidade</div>
-                <input type="text" ng-value="cmd.cmdActFunc(cmd.dn, cmd.tek, cmd.type, cmd.line)" 
-                    class="form-control" id="cmd-func">
-                <span class="input-group-btn">
-                    <button class="btn btn-success" ng-click="cmd.copy('#cmd-func')"><i class="fa fa-copy"></i></button>
-                </span>
-            </div>
-        </div>
+        <input type="hidden" ng-value="c.genCmd(cfu, cfb, cfnr, free, tdn, tek, line)">
+        <input type="hidden" ng-value="cmd">
     </form>
 </div>

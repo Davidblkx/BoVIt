@@ -1,0 +1,53 @@
+<div class="page-header">
+    <h3>Extras</h3>
+
+    <form class="form-inline">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="cw"> Chamada em espera
+            </label>
+        </div>
+        <div class="checkbox"  data-toggle="tooltip" data-placement="bottom" title="Identificação do chamador">
+            <label>
+                <input type="checkbox" ng-model="clip"> Clip
+            </label>
+        </div>
+        <div class="checkbox"  data-toggle="tooltip" data-placement="bottom" title="Oculta identificação">
+            <label>
+                <input type="checkbox" ng-model="clir" > Clir
+            </label>
+        </div>
+        <div class="checkbox" ng-show="tek == 'EWSD'"  data-toggle="tooltip" data-placement="bottom" title="Oculta identificação marcando *10*">
+            <label>
+                <input type="checkbox" ng-model="clirReq"> ClirReq
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="conf3"> Conferência
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="ccbs"> Rechamada
+            </label>
+        </div>
+        <div class="checkbox"  data-toggle="tooltip" data-placement="bottom" title="Necessário para fiscalizador">
+            <label>
+                <input type="checkbox" ng-model="hm"> 12Hz
+            </label>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon input-checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="carrier" placeholder="Valor" > Pré-Seleção
+                    </label>
+                </span>
+                <input type="text" class="form-control short" ng-model="carrierValue" >
+            </div>
+        </div>
+        <input type="hidden" ng-value="c.genCmd(cw, clip, clir, clirReq, conf3, ccbs, hm, carrier, carrierValue)">
+        <input type="hidden" ng-value="cmd">
+    </form>
+</div>

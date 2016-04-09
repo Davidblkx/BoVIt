@@ -6,21 +6,21 @@
     <table class="table table-hover">
         <thead>
             <tr>
+                <td>Estado</td>
                 <td>Código</td>
                 <td>Nome</td>
                 <td>Sigla</td>
                 <td>Tipo</td>
-                <td>Estado</td>
                 <td>Notas</td>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="c in coms" ng-show="getQuery(c).indexOf((search).toLowerCase()) != -1">
+                <td class="state" ng-class="c.active ? '' : 'off'"></td>
                 <td class="cod">{{c.code}}</td>
                 <td class="name">{{c.name}}</td>
                 <td class="sigla">{{c.ent}}</td>
                 <td class="type">{{c.tek}}</td>
-                <td class="state" ng-class="c.active ? '' : 'off'"></td>
                 <td class="obs">{{c.obs}}</td>
             </tr>
         </tbody>
