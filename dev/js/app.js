@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('bovit', ['ngRoute', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu']);
+    var app = angular.module('bovit', ['ngRoute', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu', 'Mobility']);
 
     app.config(function($routeProvider) {
         $routeProvider
@@ -33,7 +33,12 @@
         .when('/func', {
             templateUrl: 'controllers/functions.controller.html',
             controller: 'FunctionController'
-        });
+        })
+        
+        .when('/mob', {
+            templateUrl: 'controllers/mobility.controller.html',
+            controller: 'MobilityController'
+        }) ;
     });
 
     app.controller('HomeController', ['$scope', '$http', function($scope, $http) {

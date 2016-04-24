@@ -1,28 +1,37 @@
 @import '_imports';
+.ui-select-container {
+    .form-control {
+        background-color: $color-dark;
+        border: none;
+        border-radius: 0;
+        color: $color-primary;
+        overflow-x: hidden;
+    }
+    
+}
 
-#funcController{
+.ui-select-bootstrap .ui-select-choices-row.active>a{
+    background-color: $color-dark;
+}
+
+#funcController {
     height: 100%;
     margin: 0;
-    
-    .left-menu{
-        
+    .left-menu {
         background-color: $color-dark;
         color: $color-lightDark;
         height: 100%;
         padding: 0;
-        
-        a{
+        a {
             border-radius: 0;
             margin: 0;
         }
-        
-        .title{
+        .title {
             text-align: center;
             padding: 0.5em 0;
             font-size: 1.3em;
         }
-        
-        #cmd-numero{
+        #cmd-numero {
             border-radius: 0;
             text-align: center;
             font-size: 1.3em;
@@ -32,77 +41,92 @@
             border-top: 1px solid $color-primary;
             border-bottom: 1px solid $color-primary;
         }
-        
-        #geek-select{
-            
-            .col-sm-5{
+        #geek-select {
+            h3 {
+                margin: 0;
+                text-align: center;
+                padding-top: 0.3em;
+                font-weight: 0;
+                font-size: 1.5em;
+                color: $color-primary;
+            }
+            .col-sm-5 {
                 padding-right: 0;
             }
-            .col-sm-7{
+            .col-sm-7 {
                 padding-left: 0;
             }
-            .form-control{
+            .form-control {
                 background-color: $color-dark;
                 border: none;
                 border-radius: 0;
                 color: $color-primary;
             }
         }
-        
-        #cont{
-            margin-bottom: 0.5em;
+        #cont {
+            border-bottom: 1px solid $color-primary;
+        }
+        .cont {
             border-bottom: 1px solid $color-primary;
         }
     }
-    
-    .func-content{
-        
+    .func-content {
+        overflow-y: auto;
         height: 100%;
         padding: 1em 3em;
-        
-        .cmd{
+        .cmd {
             margin: 0;
-            
-            .page-header{
+            .page-header {
                 margin: 0 0 1.5em;
             }
-            
-            .form-group{
+            .form-group {
                 margin-left: 0.5em;
             }
-            
-            .checkbox{
+            .checkbox {
                 margin-right: 0.8em;
             }
-            
-            .input-checkbox{
-                
+            .input-checkbox {
                 cursor: pointer;
                 -moz-user-select: none;
                 -ms-user-select: none;
                 -webkit-user-select: none;
-                
-                label{
+                label {
                     font-weight: 400;
                     cursor: pointer;
                 }
             }
-            
-            .short{
+            .short {
                 max-width: 6em;
             }
         }
-        
-        #form-cmd{
-            
-            .btn-success{
+        #form-cmd {
+            .btn-success {
                 min-width: 120px;
             }
-            
-            .form-group{
+            .form-group {
                 margin-bottom: 0.5em;
             }
         }
+        
+        .page-header{
+            margin-top: 0;
+        }
     }
     
+    .cmd-pack{
+        
+        .cmd-item{
+            padding: 0 2em;
+            
+            
+        }
+        
+        .small{
+            max-width: 70px;
+        }
+        
+        .form-inline{
+            text-align: center;
+        }
+    }
 }

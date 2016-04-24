@@ -94,6 +94,16 @@ module.exports = function (grunt) {
                     cwd: '<%= bowerPath %>/angular-route/',
                     src: ['angular-route.min.js'],
                     dest: 'public/lib/'
+                },{
+                    expand: true,
+                    cwd: '<%= bowerPath %>/ui-select/dist',
+                    src: ['*.min.*'],
+                    dest: 'public/lib/'
+                },{
+                    expand: true,
+                    cwd: '<%= bowerPath %>/angular-sanitize',
+                    src: ['angular-sanitize.min.js'],
+                    dest: 'public/lib/'
                 }]
             },
             img: {
