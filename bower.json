@@ -24,7 +24,6 @@
     "angular": "^1.5.1",
     "bootstrap": "^3.3.6",
     "angular-route": "^1.5.2",
-    "angular-sanitize": "^1.5.5",
-    "angular-ui-select3": "ui-select#*"
+    "angular-sanitize": "^1.5.5"
   }
 }
