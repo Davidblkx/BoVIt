@@ -1,0 +1,27 @@
+#horario {
+    padding: 1em 4em;
+    height: 100%;
+    #weekCalendar {
+        max-height: 88%;
+    }
+    .page-header {
+        margin-top: 2em;
+        
+        .form-inline {
+            display: inline-block;
+            
+            .input-group {
+                min-height: 2.45em;
+                .userSelect {
+                    $size: 100px;
+                    max-width: $size;
+                    .btn {
+                        width: $size;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

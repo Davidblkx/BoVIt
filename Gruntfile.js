@@ -104,6 +104,21 @@ module.exports = function (grunt) {
                     cwd: '<%= bowerPath %>/angular-sanitize',
                     src: ['angular-sanitize.min.js'],
                     dest: 'public/lib/'
+                },{
+                    expand: true,
+                    cwd: '<%= bowerPath %>/moment/min',
+                    src: ['*.min.js'],
+                    dest: 'public/lib/'
+                },{
+                    expand: true,
+                    cwd: '<%= bowerPath %>/fullcalendar/dist',
+                    src: ['*.min.*'],
+                    dest: 'public/lib/'
+                },{
+                    expand: true,
+                    cwd: '<%= bowerPath %>/jquery/dist',
+                    src: ['jquery.min.js'],
+                    dest: 'public/lib/'
                 }]
             },
             img: {
@@ -112,6 +127,11 @@ module.exports = function (grunt) {
                     cwd: 'dev/img/',
                     src: ['**/*'],
                     dest: 'public/img/'
+                },{
+                    expand: true,
+                    cwd: 'dev/html/',
+                    src: ['favicon.ico'],
+                    dest: 'public/'
                 }]
             },
             js: {
@@ -148,8 +168,12 @@ module.exports = function (grunt) {
         
         concat: {
             app: {
-                src: ['dev/app/**/*'],
+                src: ['dev/app/controllers/**/*.js', 'dev/app/directives/**/*.js'],
                 dest: 'public/js/appDepend.js'
+            },
+            dateTime: {
+                src: ['dev/app/datetime/*.js'],
+                dest: 'public/js/dateTime.js'
             }
         },
         

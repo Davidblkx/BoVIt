@@ -24,6 +24,22 @@
 			"required": false,
 			"id": "active",
 			"order": 2
+		},
+		"function": {
+			"name": "function",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "function",
+			"order": 3
+		},
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 4
 		}
 	}
 }

@@ -1,0 +1,13 @@
+<div class="userSelect" >
+    <ui-select ng-model="$parent.user"
+               ng-disabled="ctrl.disabled"
+               reset-search-input="false"
+               title="Selecione o utilizador"
+               append-to-body="true">
+      <ui-select-match placeholder="Escolha o Utilizador">{{user.username}}</ui-select-match>
+      <ui-select-choices repeat="c in users | filter: { username: $select.search }"
+                refresh-delay="10">
+        <div ng-bind-html="c.username + ' [' + c.name + ']' | highlight: $select.search"></div>
+      </ui-select-choices>
+    </ui-select>
+</div>

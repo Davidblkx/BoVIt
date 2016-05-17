@@ -8,7 +8,7 @@
             $scope.users = data;
         });
 
-        $scope.saveUser = function(id, user, mail, isActive, role) {
+        $scope.saveUser = function(id, user, mail, isActive, role, func, name) {
 
             if (mail.length < 4) {
                 dhtmlx.message("Erro: email inválido");
@@ -16,8 +16,10 @@
             }
 
             dpd.people.put(id, {
+                "name": name,
                 "email": mail,
                 "active": isActive,
+                "function": func,
                 "role": role
             }, function(result, err) {
                 if (err) {

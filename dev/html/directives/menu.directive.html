@@ -29,6 +29,7 @@
                     <li  ng-show="user.role > 50"><a href="/#/mob"><i class="fa fa-map"></i> Mobilidade</a></li>
                 </ul>
             </li>
+            <li  ng-show="user.role > 70 || user.function == 'user'"><a href="/#/horario"><i class="fa fa-calendar"></i> Horário</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

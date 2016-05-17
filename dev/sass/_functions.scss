@@ -1,22 +1,19 @@
 @import '_imports';
-.ui-select-container {
-    .form-control {
-        background-color: $color-dark;
-        border: none;
-        border-radius: 0;
-        color: $color-primary;
-        overflow-x: hidden;
-    }
-    
-}
-
-.ui-select-bootstrap .ui-select-choices-row.active>a{
-    background-color: $color-dark;
-}
-
 #funcController {
     height: 100%;
     margin: 0;
+    .ui-select-container {
+        .form-control {
+            background-color: $color-dark;
+            border: none;
+            border-radius: 0;
+            color: $color-primary;
+            overflow-x: hidden;
+        }
+    }
+    .ui-select-bootstrap .ui-select-choices-row.active>a {
+        background-color: $color-dark;
+    }
     .left-menu {
         background-color: $color-dark;
         color: $color-lightDark;
@@ -107,25 +104,18 @@
                 margin-bottom: 0.5em;
             }
         }
-        
-        .page-header{
+        .page-header {
             margin-top: 0;
         }
     }
-    
-    .cmd-pack{
-        
-        .cmd-item{
+    .cmd-pack {
+        .cmd-item {
             padding: 0 2em;
-            
-            
         }
-        
-        .small{
+        .small {
             max-width: 70px;
         }
-        
-        .form-inline{
+        .form-inline {
             text-align: center;
         }
     }

@@ -1,4 +1,4 @@
-if(me.role < 90 && me.id != this.id){
+if(me.role < 70 && me.id != this.id){
     hide("password");
     hide("email");
     hide("isActive");
