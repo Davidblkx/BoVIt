@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"user": {
+			"name": "user",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "user",
+			"order": 0
+		},
+		"date": {
+			"name": "date",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "date",
+			"order": 1
+		},
+		"meo": {
+			"name": "meo",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "meo",
+			"order": 2
+		},
+		"sft": {
+			"name": "sft",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "sft",
+			"order": 3
+		},
+		"adsl": {
+			"name": "adsl",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "adsl",
+			"order": 4
+		},
+		"total": {
+			"name": "total",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "total",
+			"order": 5
+		},
+		"ff": {
+			"name": "ff",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "ff",
+			"order": 6
+		},
+		"carga": {
+			"name": "carga",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "carga",
+			"order": 7
+		}
+	}
+}

@@ -13,6 +13,11 @@
         $scope.month = now.month() + 1;
         $scope.year = now.year();
         
+        $scope.callModal = function(type, title){
+            $('.modal-title').text(title);
+            $('#modal-horario').modal();
+        };
+        
     }]);
     
 })();

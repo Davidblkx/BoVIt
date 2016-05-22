@@ -127,7 +127,7 @@
                     minTime: '08:30:00',
                     maxTime: '22:29:00',
                     contentHeight: height,
-                    scrollTime: timeNow,
+                    //scrollTime: timeNow,
                     viewRender: function(view, element) {
                         reload(scope.userId, view);
                     },

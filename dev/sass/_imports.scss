@@ -12,3 +12,13 @@ $font-roboto: 'Source Sans Pro', 'Roboto', 'Open Sans', sans-serif;
 .dark{
     background-color: $color-dark;
 }
+
+.resValid{
+    background-color: fade-out($color-success, 0.3) !important;
+    color: $color-dark;
+}
+
+.resInvalid{
+    background-color: fade-out($color-danger, 0.3) !important;
+    color: $color-dark;
+}

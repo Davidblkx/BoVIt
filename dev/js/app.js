@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('bovit', ['ngRoute', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu', 'Mobility', 'Horario']);
+    var app = angular.module('bovit', ['ngRoute', 'People', 'Origin', 'Comutador', 'Isp', 'Function', 'Menu', 'Mobility', 'Horario', 'Objectivos', 'Dashboard']);
 
     app.config(function($routeProvider) {
         $routeProvider
@@ -43,6 +43,16 @@
         .when('/horario', {
             templateUrl: 'controllers/horario.controller.html',
             controller: 'HorarioController'
+        })
+        
+        .when('/dashboard', {
+            templateUrl: 'controllers/dashboard.controller.html',
+            controller: 'DashboardController'
+        })
+        
+        .when('/objectivos', {
+            templateUrl: 'controllers/obj.controller.html',
+            controller: 'ObjController'
         });
     });
 

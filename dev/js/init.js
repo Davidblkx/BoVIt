@@ -21,6 +21,11 @@ function COPY_TXT(selector) {
     }
 }
 
+function WAIT(state){
+    if(state) $("#divWait").show();
+    else $("#divWait").hide();
+}
+
 (function(){
     var loc = window.location.pathname;
 
