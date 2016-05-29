@@ -23,22 +23,6 @@ module.exports = function (grunt) {
         clean: ['public'],
         // #########################################
         
-        // ############### TYPESCRIPT ##############
-        typescript: {
-            base: {
-                src: ['dev/ts/**/*.ts'],
-                dest: 'public/js/',
-                options: {
-                    module: 'commonjs',
-                    target: 'es6',
-                    basePath: 'dev/ts/**/*.ts',
-                    sourceMap: true,
-                    declaration: true
-                }
-            }
-        },
-        // #########################################
-        
         // ############# COMPILE SASS ##############
         sass : {
            options: {
