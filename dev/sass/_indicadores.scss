@@ -71,6 +71,8 @@
     margin: 0;
     border: 1px solid $color-dark;
     height: 16em;
+    overflow: hidden;
+    overflow-y: auto;
     
     .sol-title{
         
@@ -79,9 +81,11 @@
         border-bottom: 1px solid fade-out($color-dark, 0.7);
         
         h1{
-            margin: 0.2em 1em;
+            margin: 0.2em 0.5em;
             display: inline-flex;
             font-weight: 800;
+            margin-right: 0;
+            max-width: 1px;
         }
         
         .push-right{
