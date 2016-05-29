@@ -8,10 +8,6 @@ module.exports = function (grunt) {
         scope: 'devDependencies'
     });
     
-    // Load typescript task
-    // https://www.npmjs.com/package/grunt-typescript
-    grunt.loadNpmTasks('grunt-typescript');
-    
     // Display the elapsed execution time of grunt tasks
     // https://www.npmjs.com/package/time-grunt
     require('time-grunt')(grunt);
@@ -195,10 +191,6 @@ module.exports = function (grunt) {
                 files: ['dev/fonts'],
                 tasks: ['copy:fonts']
             },
-            ts : {
-                files: ['dev/ts/**/*.ts'],
-                tasks: ['typescript']
-            },
             sass: {
                 files: ['dev/sass/**/*.scss'],
                 tasks: ['sass']
@@ -244,7 +236,6 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', [
         'clean',
         'sass',
-        'typescript',
         'copy:fonts',
         'copy:lib',
         'copy:img',
@@ -258,7 +249,6 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy', [
         'clean',
         'sass',
-        'typescript',
         'copy:fonts',
         'copy:lib',
         'copy:img',
