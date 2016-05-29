@@ -1,0 +1,139 @@
+@import '_imports' ;
+
+.indicadores{
+    .page-title{
+        .push-right{
+            input{
+                text-align: center;
+                font-size: 2em;
+                max-width: 7em;
+            }
+            
+            .carga-input{
+                width: 2em;
+            }
+            
+            .date-input{
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .collectors{
+        margin: 0;
+        margin-top: 2em;
+        padding: 0 3em;
+    }
+}
+
+.result-cell{
+    border: 1px solid $color-dark;
+    padding: 0;
+    margin: 0;
+    
+    .cell-title{
+        font-size: 2em;
+        font-weight: 800;
+        text-align: center;
+        border-bottom: 1px solid fade-out($color-dark, 0.7);
+    }
+    
+    .cell-result{
+        width: 100%;
+        
+        .cell-input{
+            padding: 1em 2em;
+            
+            input{
+                font-size: 2.5em;
+                text-align: center;
+            }
+            
+            .btn{
+                font-weight: 700;
+            }
+        }
+    }
+    
+    .cell-valid{
+        background-color: fade-out($color-success, 0.4);
+    }
+    
+    .cell-invalid{
+        background-color: fade-out($color-danger, 0.4);
+    }
+}
+
+.sol-collect{
+    padding: 0;
+    margin: 0;
+    border: 1px solid $color-dark;
+    height: 16em;
+    
+    .sol-title{
+        
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid fade-out($color-dark, 0.7);
+        
+        h1{
+            margin: 0.2em 1em;
+            display: inline-flex;
+            font-weight: 800;
+        }
+        
+        .push-right{
+            float: right;
+            margin-right: 0.5em;
+            margin-top: 0.3em;
+        }
+        
+        .btn{
+            width: 4em;
+            font-weight: 800;
+        }
+    }
+    
+    .collection{
+        
+        display: flex;
+        padding: 0.5em;
+        flex-wrap: wrap;
+        
+        .item{
+            font-size: 1.3em;
+            margin-right: 0.1em;
+            border: 1px solid $color-dark;
+            width: 2.3em;
+            text-align: center;
+            cursor: pointer;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .FOT{
+            border-bottom: 2px solid $color-success !important;
+        }
+        .FOT:hover{
+            background-color: fade-out($color-success, 0.9);
+        }
+        
+        .BOT{
+            border-bottom: 2px solid $color-primary !important;
+        }
+        .BOT:hover{
+            background-color: fade-out($color-primary, 0.9);
+        }
+        
+        .FF{
+            border-bottom: 2px solid $color-danger !important;
+        }
+        .FF:hover{
+            background-color: fade-out($color-danger, 0.9);
+        }
+    }
+    
+}

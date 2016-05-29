@@ -161,6 +161,11 @@ module.exports = function (grunt) {
                     cwd: 'dev/html/',
                     src: ['**/*.html'],
                     dest: 'public/'
+                },{
+                    expand: true,
+                    cwd: 'dev/indicadores/html/',
+                    src: ['**/*.html'],
+                    dest: 'public/'
                 }]
             }
         },
@@ -168,12 +173,16 @@ module.exports = function (grunt) {
         
         concat: {
             app: {
-                src: ['dev/app/controllers/**/*.js', 'dev/app/directives/**/*.js'],
+                src: ['dev/app/controllers/**/*.js', 'dev/app/directives/**/*.js', 'dev/indicadores/app/**/*.js'],
                 dest: 'public/js/appDepend.js'
             },
             dateTime: {
                 src: ['dev/app/datetime/*.js'],
                 dest: 'public/js/dateTime.js'
+            },
+            indicadores: {
+                src: ['dev/indicadores/js/**/*.js'],
+                dest: 'public/js/indicadores.js'
             }
         },
         
@@ -215,7 +224,7 @@ module.exports = function (grunt) {
                 tasks: ['copy:js', 'file_append:dev']
             },
             concat: {
-                files: ['dev/app/**/*'],
+                files: ['dev/app/**/*', 'dev/**/app/**/*', 'dev/**/js/**/*.js'],
                 tasks: ['concat']
             },
             lib: {
@@ -227,7 +236,7 @@ module.exports = function (grunt) {
                 tasks: ['copy:img']
             },
             html: {
-                files: ['dev/html/**/*.html'],
+                files: ['dev/html/**/*.html', 'dev/**/html/**/*.html'],
                 tasks: ['copy:html']
             },
             configFiles: {

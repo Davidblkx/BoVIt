@@ -1,1 +1,2 @@
-cancelIf(me.role < 100, "Invalid user");
+cancelIf(me.function != "admin" && me.function != "sp" , "Invalid user");
+cancelIf(this.role > me.role, "Invalid permissions");

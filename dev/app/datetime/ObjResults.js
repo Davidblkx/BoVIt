@@ -10,7 +10,16 @@ function ObjResults(arrayResults){
         return count;
     }
     
-    var def = function(){return {fot:0, bot:0, ff:0};};
+    var def = function(){
+        return {
+            fot:0, 
+            bot:0, 
+            ff:0,
+            total: function(){
+                return this.fot + this.bot + this.ff;
+            }
+        };
+    };
     
     var obj = {
         

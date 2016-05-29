@@ -1,5 +1,5 @@
 @import '_imports.scss','_login.scss', '_navbar.scss', '_users.scss', '_orig.scss', '_com.scss', '_op.scss', '_codigos', 
-    '_functions', '_horario', '_obj';
+    '_functions', '_horario', '_obj', '_indicadores', '_objectivos' ;
 
 html{
     width: 100%;
@@ -46,4 +46,22 @@ html{
         top:40%;
         color: white;
     }
+}
+
+.page-title{
+    
+    .title{
+        display: inline-flex;
+        font-size: 3em;
+        padding-left: 1em;
+    }
+    
+    .push-right{
+        float: right;
+        margin-right: 2em;
+        margin-top: 1em;
+    }
+    
+    border-bottom: 1px solid fade-out($color-dark, 0.7);
+    
 }

@@ -8,15 +8,20 @@
       <div class="modal-body">
         <form>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Utilizador" id="txtUser" ng-model="newUser.user">
-            <input type="email" class="form-control" placeholder="Email" id="txtPass" ng-model="newUser.email">
-            <input type="password" class="form-control" placeholder="Password" id="txtEmail" ng-model="newUser.pass">
+            <input type="text" class="form-control" name="txt-user" autocomplete="false" placeholder="Utilizador" ng-model="newUser.user">
+            <input type="text" class="form-control" name="txt-name" autocomplete="false" placeholder="Nome" ng-model="newUser.name">
+            <select class="form-control" ng-model="newUser.func">
+              <option value="fot">FOT</option>
+              <option value="bot">BOT</option>
+              <option value="sp">Supervisão</option>
+            </select>
+            <input type="password" class="form-control" autocomplete="false" name="txt-pass" placeholder="Pass" ng-model="newUser.pass">
         </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        <a ng-click="newUser.addUser(newUser.user, newUser.email, newUser.pass)" href class="btn btn-primary btn-success">Criar</a>
+        <a ng-click="newUser.addUser(newUser.user, newUser.func, newUser.pass, newUser.name)" href class="btn btn-primary btn-success">Criar</a>
       </div>
     </div>
   </div>

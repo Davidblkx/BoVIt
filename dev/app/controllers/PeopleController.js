@@ -10,11 +10,6 @@
 
         $scope.saveUser = function(id, user, mail, isActive, role, func, name) {
 
-            if (mail.length < 4) {
-                dhtmlx.message("Erro: email inválido");
-                return;
-            }
-
             dpd.people.put(id, {
                 "name": name,
                 "email": mail,
@@ -35,7 +30,7 @@
         $scope.deleteUser = function(id) {
             dpd.people.del(id, function(count, err) {
                 if (err) {
-                    dhtmlx.message("Erro ao eleminar user");
+                    dhtmlx.message("Erro ao eliminar user");
                     console.log(err);
                     return;
                 }
@@ -57,11 +52,11 @@
                 this.user = "";
                 this.pass = "";
                 this.email = "";
+                this.func = "fot";
+                this.name = "";
 
-                this.addUser = function(user, mail, pass) {
-                    console.log(user);
-                    console.log(pass);
-                    console.log(mail);
+                this.addUser = function(user, func, pass, name) {
+                    
                     if (user == "" || user.length < 4) {
                         dhtmlx.message({
                             type: "error",
@@ -76,20 +71,18 @@
                         });
                         return;
                     }
-                    if (mail == "" || mail.length < 4) {
-                        dhtmlx.message({
-                            type: "error",
-                            text: "O email é invalido"
-                        });
-                        return;
-                    }
+                    
+                    user = user.toUpperCase();
 
                     dpd.people.post({
                         username: user,
                         password: pass,
-                        email: mail,
-                        role: 50,
-                        active: true
+                        name: name,
+                        function: func,
+                        email: "",
+                        role: func == 'fot' ? 50 : 65,
+                        active: true,
+                        
                     }, function(user, err) {
                         if (err) return dhtmlx.message(err);
                         location.reload();
