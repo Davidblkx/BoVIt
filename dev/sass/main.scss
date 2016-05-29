@@ -65,3 +65,8 @@ html{
     border-bottom: 1px solid fade-out($color-dark, 0.7);
     
 }
+
+#view{
+    overflow: hidden;
+    overflow-y: auto;
+}
