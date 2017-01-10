@@ -76,7 +76,7 @@ module.exports = function (grunt) {
                     dest: 'public/lib/'
                 },{
                     expand: true,
-                    cwd: '<%= bowerPath %>/ui-select/dist',
+                    cwd: '<%= bowerPath %>/angular-ui-select/dist',
                     src: ['*.min.*'],
                     dest: 'public/lib/'
                 },{

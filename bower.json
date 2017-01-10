@@ -20,12 +20,16 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^4.5.0",
-    "angular": "^1.5.1",
-    "bootstrap": "^3.3.6",
-    "angular-route": "^1.5.2",
-    "angular-sanitize": "^1.5.5",
-    "moment": "^2.13.0",
-    "fullcalendar": "^2.7.1"
+    "font-awesome": "4.5.0",
+    "angular": "1.5.5",
+    "bootstrap": "3.3.6",
+    "angular-route": "1.5.2",
+    "angular-sanitize": "1.5.5",
+    "moment": "2.13.0",
+    "fullcalendar": "2.7.1",
+    "angular-ui-select": "^0.19.6"
+  },
+  "resolutions": {
+    "angular": "1.5.5"
   }
 }
