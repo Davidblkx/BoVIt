@@ -459,6 +459,11 @@
         $scope.getLink = function(num) {
             return $sce.trustAsResourceUrl("http://portal-domf.telecom.pt/dop/stc3/equipamentos/mainP.asp?txtNa=" + num);
         };
+
+        $scope.open = function(num){
+            var link = $scope.getLink(num);
+            window.open(link, '_blank');
+        }
     }]);
     
 })();

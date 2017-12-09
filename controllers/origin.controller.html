@@ -3,5 +3,10 @@
         <span class="input-group-addon">Numero</span>
         <input class="form-control" ng-model="num">
     </div>
+    <button 
+      class="btn btn-block btn-primary"
+      ng-click="open(num)"
+      ng-hide="('' + num).length < 3"
+    >Consultar</button>
     <iframe ng-src="{{getLink(num)}}"></iframe>
 </div>
