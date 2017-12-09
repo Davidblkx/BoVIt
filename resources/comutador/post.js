@@ -1,1 +1,0 @@
-cancelIf(me.role < 90, "Invalid user");
