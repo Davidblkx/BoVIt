@@ -1,0 +1,76 @@
+<div id="funcController" class="row">
+    <div class="left-menu col-sm-2">
+        <div class="title">Funcionalidades</div>
+
+        <input type="text" ng-model="dn" class="form-control" id="cmd-numero" placeholder="Número">
+
+        <div id="cont">
+            <div class="row" id="geek-select">
+                <div class="col-sm-5">
+                    <select class="form-control" id="cmd-select-tek" ng-model="tek">
+                    <option value="S12">S12</option>
+                    <option value="EWSD">EWSD</option>
+                </select>
+                </div>
+                <div class="col-sm-7">
+                    <select class="form-control" id="cmd-select-line" ng-model="line">
+                    <option value="A01">Analógica</option>
+                    <option value="A13">RDIS s\DDIs</option>
+                    <option value="A05">RDIS c\DDIs</option>
+                </select>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn btn-primary btn-block" ng-class="viewReenc ? 'active' : ''" ng-click="viewReenc = !viewReenc">Reencaminhamento</a>
+        <a class="btn btn-primary btn-block" ng-class="viewBarra ? 'active' : ''" ng-click="viewBarra = !viewBarra">Barramentos</a>
+        <a class="btn btn-primary btn-block" ng-class="viewVoice ? 'active' : ''" ng-click="viewVoice = !viewVoice">Voicemail</a>
+        <a class="btn btn-primary btn-block" ng-class="viewOther ? 'active' : ''" ng-click="viewOther = !viewOther">Outros</a>
+    </div>
+    <div class="func-content col-sm-10">
+        
+        <reenc class="cmd" ng-show="viewReenc" tek="tek" line="line" tdn="reenc.tdn" free="reenc.free" 
+               cfu="reenc.cfu" cfb="reenc.cfb" cfnr="reenc.cfnr" cmd="reenc.cmd" rcmd="reenc.rcmd" ></reenc>
+               
+        <barr-s12 class="cmd" ng-show="viewBarra && tek == 'S12'" tek="tek" ocbp="barrs12.ocbp" ocbp-value="barrs12.ocbpValue" 
+                 ocbuc="barrs12.ocbuc" ocbuc-pin="barrs12.ocbucPin" acb="barrs12.acb" acb-value="barrs12.acbValue"
+                 icbp="barrs12.icbp" cmd="barrs12.cmd" rcmd="barrs12.rcmd" ></barr-s12>
+                 
+        <barr-ewsd class="cmd" ng-show="viewBarra && tek == 'EWSD'" dn="dn" tek="tek" cmd="barrewsd.cmd" rcmd="barrewsd.rcmd"
+                   reqspori="barrewsd.reqspori" reqspter="barrewsd.reqspter" prog="barrewsd.prog"
+                   prog-pin="barrewsd.progPin" optrcl="barrewsd.optrcl" optrcl-value="barrewsd.optrclValue"
+                   accsusp="barrewsd.accsusp" accspori="barrewsd.accspori" admin="barrewsd.admin" ></barr-ewsd>
+               
+        <voice-mail class="cmd" ng-show="viewVoice" all="voice.all" busy="voice.busy" nr="voice.nr" 
+               cmd="voice.cmd" rcmd="voice.rcmd" tek="tek" ></voice-mail>
+               
+        <ident class="cmd" ng-show="viewOther"  tek="tek" line="line" cw="other.cw" clip="other.clip" 
+               clir="other.clir" conf3="other.conf3" ccbs="other.ccbs" hm="other.hm"  carrier="other.carrier"
+               carrier-value="other.carrierValue" clir-req="other.clirReq" cmd="other.cmd" rcmd="other.rcmd" ></ident>
+               
+
+        <form id="form-cmd">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" ng-click="copy(getAct())"><i class="fa fa-copy"></i> Activar</button>
+                        <button class="btn btn-primary" ng-show="tek == 'EWSD'" ng-click="copy(getAct().substring(10))"><i class="fa fa-copy"></i></button>
+                    </span>
+                    <input type="text" class="form-control" id="cmd-act" 
+                    ng-value="genCmd(dn, tek, line, reenc.cmd, other.cmd, voice.cmd, barrs12.cmd, barrewsd.cmd)">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" ng-click="copy(getDeAct())"><i class="fa fa-copy"></i> Desactivar</button>
+                        <button class="btn btn-primary" ng-show="tek == 'EWSD'" ng-click="copy(getDeAct().substring(10))"><i class="fa fa-copy"></i></button>
+                    </span>
+                    <input type="text" class="form-control" id="cmd-deact" 
+                    ng-value="genCmd(dn, tek, line, reenc.rcmd, other.rcmd, voice.rcmd, barrs12.rcmd, barrewsd.rcmd)">
+                </div>
+            </div>
+        </form>
+        <input type="text" id="txt" ng-show="copyReady" ng-model="copyValue" class="form-control">
+    </div>
+</div>

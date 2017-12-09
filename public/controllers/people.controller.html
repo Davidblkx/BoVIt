@@ -1,0 +1,36 @@
+<table class="table" id="templateUsers">
+    <thead>
+        <tr>
+            <td>Username</td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td ng-show="user.role > 70">Role</td>
+            <td>Função</td>
+            <td ng-show="user.role > 70">Activo</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newUserModal">
+                    <i class="fa fa-plus"></i> Novo
+                </button>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="u in users" ng-hide="user.function == 'sp' && (u.function != 'fot' && u.function != 'bot') && u.function != 'sp'">
+            <td>{{u.username}}</td>
+            <td><input type="text" name="name" ng-model="u.name"/></td>
+            <td><input type="text" name="email" ng-model="u.email"/></td>
+            <td ng-show="user.role > 70"><input type="text" name="role" ng-model="u.role"/></td>
+            <td><input type="text" name="function" ng-model="u.function"/></td>
+            <td ng-show="user.role > 70"><input type="checkbox" name="isActive" ng-model="u.active"/></td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-success" href ng-click="saveUser(u.id, u.username, u.email, u.active, u.role, u.function, u.name)"><i class="fa fa-check"></i> Save</a>
+                    <a class="btn btn-danger" href ng-click="deleteUser(u.id)"><i class="fa fa-remove"></i> Delete</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<new-user></new-user>

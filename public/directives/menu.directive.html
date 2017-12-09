@@ -1,0 +1,52 @@
+<nav class="navbar navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/#/orig">{{User ? (User.username ? User.username : User) : 'BoVit.'}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li  ng-show="user.role > 90 || user.function == 'sp'"><a href="/#/users"><i class="fa fa-users"></i> Utilizadores</a></li>
+            <li class="dropdown" ng-show="user.role > 50">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fax"> Comutação</i></a>
+                <ul class="dropdown-menu">
+                    <li  ng-show="user.role > 50"><a href="/#/orig"><i class="fa fa-home"></i> Origem</a></li>
+                    <li  ng-show="user.role > 50"><a href="/#/com"><i class="fa fa-fax"></i> Comutadores</a></li>
+                    <li  ng-show="user.role > 50"><a href="/#/isp"><i class="fa fa-legal"></i> ISP</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" ng-show="user.role > 50">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-code"> Códigos</i></a>
+                <ul class="dropdown-menu">
+                    <li  ng-show="user.role > 50"><a href="/#/func"><i class="fa fa-cogs"></i> Funcionalidades</a></li>
+                    <li  ng-show="user.role > 50"><a href="/#/mob"><i class="fa fa-map"></i> Mobilidade</a></li>
+                </ul>
+            </li>
+            <li  ng-show="user.role > 70"><a href="/#/horario"><i class="fa fa-calendar"></i> Horário</a></li>
+            <li class="dropdown" ng-show="user.role > 70 || user.function == 'fot' || user.function == 'bot' || user.function == 'sp'">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-money"> Prémios</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/objectivos"><i class="fa fa-line-chart"></i> Objectivos</a></li>
+                    <li><a href="/#/indicadores"><i class="fa fa-calculator"></i> Indicadores</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown" ng-show="user.role >= 25">
+                <a href class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-key"></i></a>
+                <change-pass class="dropdown-menu"></change-pass>
+            </li>
+            
+            <li><a id="btnLogout" href ng-click="nav.logout()"><i class="fa fa-sign-out"></i> Logout</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>

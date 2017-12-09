@@ -1,0 +1,66 @@
+<div class="mobewsddest cmd-pack">
+    
+    <form class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">EQN</div>
+                <input type="text" class="form-control" ng-model="eqn" placeholder="EQN">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">Orig1</div>
+                <input type="text" class="form-control small" ng-model="orig1" placeholder="Orig1">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">Orig2</div>
+                <input type="text" class="form-control small" ng-model="orig2" placeholder="Orig2">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">CPT</div>
+                <input type="text" class="form-control small" ng-model="origCpt" placeholder="Orig CPT">
+            </div>
+        </div>
+        <div class="form-group" ng-show="line == 'A13'">
+            <div class="input-group">
+                <div class="input-group-addon">MSN</div>
+                <input type="text" class="form-control" ng-model="msn1" placeholder="">
+            </div>
+        </div>
+        <div class="form-group" ng-show="line == 'A05'" >
+            <div class="input-group">
+                <div class="input-group-addon">Nº DDI</div>
+                <input type="text" class="form-control small" ng-model="nddi" placeholder="Número DDIs">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">SSDI</div>
+                <input type="text" class="form-control small" ng-model="ssdi" placeholder="default 9">
+            </div>
+        </div>
+    </form>
+    
+    <div class="cmd-item" >
+        <h3>Registar Número</h3>
+        <com-field value="crDn(num, line, nddi)" show-portal="true" ></com-field>
+    </div>
+    
+    <div class="cmd-item" >
+        <h3>Criar CPT</h3>
+        <com-field value="crCpt(num, line, origCpt, nddi)" show-portal="true" ></com-field>
+    </div>
+    
+    <div class="cmd-item" >
+        <h3>Criar Número</h3>
+        <com-field value="crSub(num, line, eqn, orig1, orig2, nddi, ssdi)" show-portal="true" ></com-field>
+    </div>
+    
+    <div class="cmd-item" ng-show="line == 'A13'" >
+        <h3>Criar MSN <small>Deve ser executado por cada msn</small </h3>
+        <com-field value="crMsn(msn1, eqn, orig1, orig2)" show-portal="true" ></com-field>
+    </div>
+    
+    <div class="cmd-item" ng-show="line == 'A05'" >
+        <h3>Criar Canais</h3>
+        <com-field value="crLn(num, eqn, orig1, orig2, nddi, '1')" show-portal="true" ></com-field>
+        <com-field value="crLn(num, eqn, orig1, orig2, nddi, '2')" show-portal="true" ></com-field>
+    </div>
+    
+</div>

@@ -1,0 +1,219 @@
+[{
+        "_id": "d1e75c2bbc08eb48",
+        "username": "admin",
+        "password": "f5b83367dbfbebd5f99ca9a5e35af0c7b1b1936ff8fce9498afdb17ddf65a6ba709d26f66bc9f8eafc3a64619f93c268b28f85f2767b184273896a85b56992ea8e7d748ecdbf63cacdd83d2965a306c9362feae85a28850e956e0255d096da6aeec3fe6ca427fbe70242ff2f8402aa9577e2fae3cfe4227a968021f80e1238ade3687ae4a4bd047bb18cdc8a5072dd3f49b19cfb62091082a367c78ef285af55",
+        "active": true,
+        "email": "davidblkx@outlook.com",
+        "role": 100,
+        "function": "admin"
+    },
+    {
+        "_id": "7f8d236e1ba27aea",
+        "email": "geral@bovit.ml",
+        "role": 65,
+        "active": true,
+        "username": "botvit",
+        "password": "7351cb785786e95784ad26292b83623aab7713abc4efc3de3ac01b00caf4023c3b5916d7d5abe957e4f3d2f55cffa6394dcd173468b37371fd338f000a617a94449dde1eba8978f9de9feb2473c2021e86195d92bf74c785a498e014cb5304b6e883f106833e79c52a3c652a32da1ffd2c1633926cd6c590e82ebe553da3681e8284bd8db18aca3b529aa096e5ca2a593c8ccd880c041dc119f9c0374f79395e",
+        "function": "geral"
+    },
+    {
+        "_id": "8f32466c562738ef",
+        "email": "xkesp32@telecom.pt",
+        "role": 100,
+        "active": true,
+        "username": "XKESP32",
+        "password": "c75c21c6a8c93376203e435e55f069506758ecdff19c193b9600967af28fabbb42847d9c3c3d79b89bf1ded1c6146cb1396685f7488476beabe62964ad99c431593d5fa9d559cf1a3614a1a92baaec31faf6ee6a228ecd168e20f236b095eb24bfc64e13835d318682459ebfb1e9a8eb84a7958304a757e03b44ea2422a3d87450804a529b6026f963baff8bf43deb4f2d07b6892d40906b591267cb82ec2d7d",
+        "function": "bot",
+        "name": "David Pires"
+    },
+    {
+        "_id": "8983a7e42ba5b92c",
+        "email": "xrdau34@telecom.pt",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Ricardo Lourenço",
+        "username": "XRDAU34",
+        "password": "5aecf1a02727593732150f7457f168431dcfd165acc3085b95eba52df56d156111a5c35c7b1aeaf8922ad4f3b965f79878c202019597f3cea9f5bbaa3d6577baaad865f7c96362ba4f9ef0a8d1b79cf1262edeb8ae9d1de53d2a0bb967b5d256ccb0607243a6d44d682c504ef60eb864f33b2dd1aa4a3bed81b59c88d48e8858f6c783ee1f4ee69f965dd9edcefa945fa5c59bcf93e2b8904a9cb67465f968d1"
+    },
+    {
+        "_id": "b70bfd524c2f680e",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Cicero  Albuquerque",
+        "username": "XPLFA69",
+        "password": "e0dd2c6e693f2cc25227042ec8deda091c977c6a1dea9105156427f8256ff0293fa34ee0a333e0dfa53602bc61b5314965e629864801631de38ef8d1dcb377c81e4d17c267c5a5533921d1de3d540a7e227c226cc2d9fcc35fd153398e9a2879f9928e2d77707c2a34ceb3796c85387daf626f6727a702f30a9af608b46ffa25772d7e9cd37f2c6e8f977b194beecb35b4b38871c524663ade11cceeedb46c02"
+    },
+    {
+        "_id": "fd9aed557dc56b64",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Rui Trindade",
+        "username": "XPTX155",
+        "password": "1f2d5a3c5b18e4419740982d5699ea0dea6efff782bd0fa72a6b160ee42f336eb20973118bcc11c9f3bfd336d5dad69f5964876f45bf9798bdf883cce68a55b5070eda65850f5ee7a990d6549613669b2fb9e53b7ee43fb68b16caa1889e77ffae9ca6f55ee2b57c418ab6969af850c49406d7838dfab0f2cf41b72dbeb1b84edd5ea0db2a6cb3f7c508f282aca9ff80eae765fd01b85f4c7a798c7bb659ccb1"
+    },
+    {
+        "_id": "2dc348368d23388c",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "João Santos",
+        "username": "XPXT368",
+        "password": "32902cd76d598e22a8362aba51b21f0454c5850e93d10cb4023d21f2e738a7d8f5e87a51315022e95662c8ea5aeb324890fd07eaaa2885ebc7ba63860a00dd0f9ebda28dfb987d9f9542db84e31773d6995c97f5ec98e52344f74f35ce0c2fdfba264c0061ae6213ab13f69d6b34f7bdf3764068a5e4da29293054ca0cf778d54a9eefa76dd21ce7f9061d3c315d834610338b244f5d1c942eae17c886f17de8"
+    },
+    {
+        "_id": "77511bdd0563d8c2",
+        "email": "",
+        "role": 50,
+        "active": true,
+        "function": "fot",
+        "name": "Mauro Agostinho",
+        "username": "XRDAU41",
+        "password": "10b21159f222e7a85dffcf82a11244f38e9313318d44c569cc9ba22f78c43b80bed6d8a87e8492b7012bf48dcb89005bf046febfb27556273cbd0b7603870b6bb7c1549ff006d060fb10abe64fb50203cae0097c413a61589168a45be3f06e29e4d94a26c719030cefd1cfa0453267aefd10a7a0dd56847a6af8bdd9e9939814404ae15d97b9810c5a8f60af174becd3e4369b36d72b10d27f19306cdc376039"
+    },
+    {
+        "_id": "8211fe96652cfb12",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Humberto Dias",
+        "username": "XSLTC75",
+        "password": "0bed602841b930dde0130cb3e7799f6441ed9dd2a04e3c9d84cde9cd1b211c5a999579ede9aed02a2f658f6d690e8cab72acc643b29c5346503543cafea5446e10e2b6433f9fc6bb095e78bef539afd292b86f47cf8276d1af04c0f79ac6b9e71cfac6a146869bbc70e8bc57626a00b8464adaccef2da83f9656ec88600939d02b4b63d525c9d9bc3dfb7e5a6e76dfd7b79f4e1374d565516df767bd0e7e9a09"
+    },
+    {
+        "_id": "8df6f07ec5131898",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Patrícia Perdigão",
+        "username": "XLSTF07",
+        "password": "030fa2a27cfadebe3ed037ec1f963129b39c16c695986f876354e46026af92f557e6ed2fd75b51da011c9afd1f57dad428ecab044a20c73cbb7abd99c910aab95de3f52d678be62150113148bd7c516d4beef552dbe532ecc2a163777024e1e06fc8dfbac041ce82246febd9ac2418ca7db4d989f19b0d2c55bd4d871aa2084adc37f03a9cada85fdef4ef689777896956b74699e91700a9004512ba980aecc8"
+    },
+    {
+        "_id": "3b1b58d9f086f88b",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Nuno Almeida",
+        "username": "XKESL93",
+        "password": "eb26f4df9046b9598a1bc6029a529be26fb844ecfab3ab81b88224575e916d07f0616b6bccddfd5ab14adf21f1ce66dd5acfc39a6bda94c856cefc81d3c89e6d2e5d868c6ab6edd97e1b7e22db3e074f8605f14f44e14408dbcdc51cb851b0eb3023a291b1fc985bd0780edc8cc56a1a22f8995220f5151101c3e82e1a7148cc477d7edf5818d7b81010ca1bcabc826822ce7ee2de004f91d83634fd631e5dec"
+    },
+    {
+        "_id": "775b5854ec168944",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Dario Almeida",
+        "username": "XPLFA52",
+        "password": "822d51a4a9745ec68e6b723cc9c0ab28018a75f4a8497eb08bc6fc0c2803d024d0d3b47e87359a6df46914b9f5b56a19bd3fc1a853e377b4c30600c120329bc0f0591804cf007b254d6c46ff8c8f68c62943435e53839e2497f38677b61d0189e313a5022ae54a28e92ab179f25877cabd1f14489a413ba6c3ec00a1a47878707f41af835c9a06016a32c5d345b4e83bb2ea4cdfd7d485d7da2354f31077535f"
+    },
+    {
+        "_id": "ffe3883c5f382895",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Francisco Matias",
+        "username": "XRDAF96",
+        "password": "110d906b57868f9d34045cdf99a016ac5e79d89dd750601528da0f773f922a3004bc93087fdbf86efad62f819b33a68eca5e03adaac846cf9d5e727424adbe92e1f4054a98f014fbb6456e72eb740e3fd0874f2e76759ad233e97030e1375a7fe0c63ef745804069ced1048512f1607d29b995f5279824e24d762a5cc64608247d2b3ee176b9a7c0560c862a08ba8c32fdf5fc20b984ae987680b7656b272c3d"
+    },
+    {
+        "_id": "af2ac00404ec68e4",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Carlos Delgado",
+        "username": "CC000564",
+        "password": "374839316842bcfe3c12d323f86648f5bb0daa4bca3f3fc2ce11e5a37aa12c3a06f7140b6e8b7fabd77562ca88645b9320e37a1f3417cae2711e04f9197b038a96fbddd4f181cd6da215eaeb589d14a4b53461527e97a43b89cab0ae2457fa4160e82bbbc1c28d396c58325cf540f211212af542189e53598d4b089af33f3be3ce825dffe4925c4e44bf376ca1345eec6767bf6c1305be90ade3024efdb40cac"
+    },
+    {
+        "_id": "4bf3b1e40a54481f",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Dora Alves",
+        "username": "XKESO13",
+        "password": "cccbd03db735985afd49e3a5b2d1c2a0c6af64fe14df9b44973da5131027ed5961a56d8b8b07a0e5bb1934a2329378b1f5cffae56774b4e6dcffbab33e34822d9baa58126b841c746ec387e25d81284cbc66abdc0f46753fea7c4896ceddba3e41f43e92f8016ce0c68f18817481bfa071e04a5c85434558bd234f7be35c192d5396cbe629e3498220689ccfd774b60fa7340f1946bb5d3c2abf513b8936516d"
+    },
+    {
+        "_id": "1490bfb31e7738ec",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Pedro Ferreira",
+        "username": "XRSTG53",
+        "password": "5ed39991eae3ac4179bc652b5a5783633477bf80343d904383648dccc02096feb092a7ead7a68dc6077a5de0bbb3d7e9f0f7fe39bcad39a4c91c2d12e1b6d1e6c51dc385fb6d09f61ce1f3592d5352b61f2f8c2e9a85de5e26a4a9f90d8c4bb7bb13b38b1a8cf72f312a14d8eaed4d1044d1325e02855944106a79e6facc682ac8f859217c10f732f640905aaae77218209351fe35d8e4011c81a878f0b44085"
+    },
+    {
+        "_id": "6684d43ddf4f688e",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Cristina Rodrigues",
+        "username": "XTLTB62",
+        "password": "6b4da25f300cc6d3e380b18b8fa377e3b2d0af41cc715ec1587fd2758285a5c70dd83e7b21533fd171612b6ea6c71f960ea7e4603a6ff2cd8bd9d34bc6ae27b98dffea03dab925d8e6d0cd64b1e0bd5178fbce3b2147e61c6d4dddc5ebd4c8d02a205e665f60b1c712e1b882433cd8726767ecf4c0881b3b8d079a2615fab8a7325dfccd88d48aa47adbd5b679a1c563474ac5a94a1cb3ffe2912c26e32ef3dd"
+    },
+    {
+        "_id": "63d3e0164c81aa91",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Sergio Vale",
+        "username": "XPTT325",
+        "password": "e258febc7e5737ecaac87a5d6a9367e086c201600bfdb51257fea367ece15bbfc5e55ba83a069ccbb4dca7eb70e50c6e8a9f58293b03b6885c9cddb2d791270d38dcd60b44b92e88239ca7b768e3877f340824b612d522cbba85c261d6ce2ea8aafdacc698ec722b063c0620554dec847c0d6ef5590bc8b83f743189bf9f08e552c5571847018308c928d80e885952deb93c4e8b4a393acd8f22c8898b6a018b"
+    },
+    {
+        "_id": "4c12a47373e1f921",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Ruben Alves",
+        "username": "XVTHI83",
+        "password": "18762054de9387f5dbae2a1b8542201ca3babfbd948c8fb9dbeb499583214d16936796e7d893a55c5d77c0ffabc3dd23f4313eb6b991bdaa55e15546c790425d171bf3d0c55639f623d462b917a289038b7e650795a7ef7514aac5423964e17437b11d483afe49375a604e6beb760af263902d0e942ac11f4b1f35af48839b494c40ff446755727219fb92295af83c38a1051dbebe4d87ebf0a65785d6bb616a"
+    },
+    {
+        "_id": "a313779edda23b0d",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "bot",
+        "name": "Jorge Cordeiro",
+        "username": "XGRNA23",
+        "password": "b452dff33094de9c6fb4bd96f0107dffdc501b00d311d5566c16bbef0867c2b3a3db434fbd6121e4c00dfaa564722439f2f0efe030d99f0b2b876bb9f2df1f8be89b792e3d4b8213d4c66af743b89dfe6420c71ac45735a845f1007d59d498904d60c73bfabc3dd87f7ff426664337dd006e6496a3872a6adadd0e2aecd0095ec8088d16d843333a3747ed82794cda9ea3dfc5560b17e821d12bb9b6ad46cc5a"
+    },
+    {
+        "_id": "5658041444b0e840",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Patrícia Bastos",
+        "username": "XRDAT76",
+        "password": "40a811fee3bcdf421791ccddfb1c13e07850733425963bce6e79751adca2e1d786280d019e13ecadf20c42de35612438e26a325fb5b7384a600f1bfd7c95c8c32034569fa6056a2530e9d7f00a6b11f37a2e0dbc0520e13854dee26c34f65fac512451769138864869c075bb078a51fbb06a2877adbc158fc080864dcac8dbe2cf0c6c785a12e978f0f068c56fd5afeabebf2777614b0d67dfc9a56acd78f1e6"
+    },
+    {
+        "_id": "eb38ef485766dab9",
+        "email": "",
+        "role": 65,
+        "active": true,
+        "function": "sp",
+        "name": "Bruno Gonçalves",
+        "username": "CCPXT004",
+        "password": "45ca3abfcd97ad65821abe83272a81f68f401488d019d59e8faca181864f61b4d13dea77bcc65aee26ac943ca9ba10e8ddd75ddb5dfd2a2763753cd5e1c7adaa95432f7311040a4a952519c5cdf72bb3eab157dc465f215136d114c70211aa1d6c50dbf39f7258e15797aab3faaf4969ef36f37861ab10d8b67098305eb8997239d8767c91915a54c1a0354d6472734fb3a421b403c29201b58f80de7a5ecd52"
+    }
+]

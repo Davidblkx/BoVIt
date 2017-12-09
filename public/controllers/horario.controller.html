@@ -1,0 +1,31 @@
+<div id="horario">
+    <div class="modal fade" id="modal-horario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TITULO</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <form class="form-inline">
+
+            <div class="input-group">
+                <div class="input-group-addon">Utilizador</div>
+                <user-select user="user"></user-select>
+            </div>
+
+            <button class="btn btn-primary btn-horario" ng-click="callModal(horario, 'Definir Horário')">Horário</button>
+            <button class="btn btn-primary btn-folgas" ng-click="callModal(folgas, 'Troca de folgas\\horário')">Trocas</button>
+            <button class="btn btn-primary btn-ferias" ng-click="callModal(ferias, 'Definir Férias')">Férias</button>
+            <button class="btn btn-primary btn-adapt" ng-click="callModal(adapt, 'Adaptabilidades')">Adaptabilidades</button>
+        </form>
+    </div>
+    <week-calendar user-id="user" edit="edit" day="day" month="month" year="year"></week-calendar>
+</div>

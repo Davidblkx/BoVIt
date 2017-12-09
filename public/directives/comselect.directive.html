@@ -1,0 +1,18 @@
+<div id="comSelect" >
+    <!-- <select ng-model="com" class="form-control" >
+        <option ng-repeat="c in coms" value="{{c.ent}}" >{{c.ent}} {{ full ? ' - [' + c.name + ']' : ''}}</option>
+    </select> -->
+    <ui-select ng-model="$parent.com"
+               theme="bootstrap"
+               ng-disabled="ctrl.disabled"
+               reset-search-input="false"
+               title="Selecione o comutador"
+               append-to-body="true">
+      <ui-select-match placeholder="Escolha o comutador">{{com.ent + (full ? ' - [' + com.tek + ']' : '')}}</ui-select-match>
+      <ui-select-choices repeat="c in coms | filter: { ent: $select.search }"
+                refresh-delay="0">
+        <div ng-bind-html="c.ent + (full ? ' - [' + c.tek + ']' : '') | highlight: $select.search"></div>
+      </ui-select-choices>
+    </ui-select>
+    
+</div>
