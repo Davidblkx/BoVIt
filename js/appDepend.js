@@ -3,7 +3,7 @@
     var app = angular.module('Comutador',[]);
     
     app.controller('ComController', ['$scope', '$http', function($scope, $http) {
-        $http.get('/db/comutador.json').success(function(data) {
+        $http.get('/BoVIt/db/comutador.json').success(function(data) {
             $scope.coms = data;
         });
 
@@ -214,7 +214,7 @@
     var app = angular.module('Isp', []);
 
     app.controller('IspController', ['$scope', '$http', function($scope, $http) {
-        $http.get('/db/isp.json').success(function(data) {
+        $http.get('/BoVIt/db/isp.json').success(function(data) {
             $scope.isps = data;
         });
     }]);
@@ -226,7 +226,7 @@
 
     app.controller('MobilityController', ['$scope', '$http', function($scope, $http) {
 
-        $http.get('/db/comutador.json').success(function(data) {
+        $http.get('/BoVIt/db/comutador.json').success(function(data) {
             $scope.coms = data;
         });
 
@@ -468,7 +468,7 @@
     
     app.controller('PeopleController', ['$scope', '$http', function($scope, $http) {
         
-        $http.get('/db/people.json').success(function(data) {
+        $http.get('/BoVIt/db/people.json').success(function(data) {
             $scope.users = data;
         });
 
@@ -1272,7 +1272,7 @@
                     return c.ent + ($scope.full ? ' - [' + c.name + ']' : '');
                 };
                 
-                $http.get('/db/comutador.json').success(function(data) {
+                $http.get('/BoVIt/db/comutador.json').success(function(data) {
                     $scope.coms = data;
                     $scope.com = data[0];
                 });
